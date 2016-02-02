@@ -2,11 +2,16 @@
   "name": "electricity-a-primer",
   "version": "0.0.0",
   "description": "A slideshow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/achingbrain/electricity-a-primer.git"
+  },
   "dependencies": {
     "@achingbrain/slides": "^0.0.4"
   },
   "scripts": {
-    "start": "slides present"
+    "start": "slides present",
+    "deploy": "slides publish"
   },
   "author": {
     "name": "Alex Potsides"

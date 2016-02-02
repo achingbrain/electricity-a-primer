@@ -4,6 +4,8 @@ A short talk for NodeBots of London to refresh our collective memories about ele
 
 Built using [slides](https://www.npmjs.com/package/@achingbrain/slides)
 
+Published at [http://achingbrain.github.io/electricity-a-primer](http://achingbrain.github.io/electricity-a-primer)
+
 ## Getting started
 
 1. `git clone https://github.com/achingbrain/electricity-a-primer.git`
