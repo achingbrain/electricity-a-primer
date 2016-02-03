@@ -16,32 +16,193 @@
       </section>
       <section data-bespoke-backdrop="static">
         <h2>Audience</h2>
-        <ul>
-          <li>Beginners</li>
-          <li>Haven't thought about electrical engineering since school</li>
-        </ul>
+        <p class="delayed">People who haven't thought about circuits since school</p>
+        <p class="delayed">e.g. Me.</p>
       </section>
       <section data-bespoke-backdrop="cables">
-        <h1>What is it?</h1>
+        <h2 class="delayed">What is it?</h2>
+        <p class="delayed">Energy resulting from the flow of electrons around a circuit</p>
+        <aside>
+          <ul>
+            <li>Probably not this</li>
+            <li>This just looks dangerous</li>
+          </ul>
+        </aside>
       </section>
       <section data-bespoke-backdrop="mains">
-        <h2>What is it?</h2>
-        <p>The flow of electrons around a conductive circuit</p>
+        <h1>AC</h1>
+        <aside>
+          <ul>
+            <li>Alternating Current</li>
+            <li>Comes from the mains</li>
+            <li>Not covered in this talk</li>
+          </ul>
+        </aside>
       </section>
-      <section data-bespoke-backdrop="ohm"></section>
+      <section data-bespoke-backdrop="battery-cat">
+        <h1>DC</h1>
+        <aside>
+          <p>Direct Current</p>
+          <p>Lives in batteries</p>
+          <p>Bit simpler to deal with</p>
+        </aside>
+      </section>
+      <section data-bespoke-backdrop="ohm"><img src="images/ohm.gif"></section>
       <section>
         <h2>Ohm's Law</h2>
-        <ul>
-          <li>v = i r</li>
-          <li>Voltage, volts - v</li>
-          <li>Current, amperes - i</li>
-          <li>Resistance, ohms - r</li>
+        <h3>
+          <pre><code>v = i r</code></pre>
+        </h3>
+        <ul class="delayed">
+          <li class="delayed">Voltage, volts - v</li>
+          <li class="delayed">Current, amperes - i</li>
+          <li class="delayed">Resistance, ohms - r</li>
         </ul>
       </section>
-      <section data-bespoke-backdrop="troll"></section>
+      <section data-bespoke-backdrop="troll"><img src="images/troll.jpg"></section>
       <section>
-        <h1>hello world</h1>
+        <h2>Voltage</h2>
+        <p>Potential difference in a circuit</p>
+        <aside>
+          <ul>
+            <li>Potential for current to flow</li>
+            <li>High tank drains into low tank</li>
+          </ul>
+        </aside>
       </section>
+      <section data-bespoke-backdrop="battery"><img src="images/battery.png"></section>
+      <section>
+        <h2>Amps</h2>
+        <ul class="delayed">
+          <li class="delayed">A measurement of current</li>
+          <li class="delayed">Current is charge moving over time</li>
+          <li class="delayed">Charge is measured in columbs</li>
+          <li class="delayed">1 columb per second</li>
+          <li class="delayed">1 columb = 6.241×10<sup>18</sup> * charge of one proton</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Amps</h2>
+        <ul class="delayed">
+          <li class="delayed">Columbs are <code>c</code> in SI units</li>
+          <li class="delayed">Amps are <code>A</code> in SI units</li>
+          <li class="delayed">Ohm refers to Amps as <code>i</code></li>
+          <li class="delayed">Thanks for nothing SI</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Resistors</h2><img src="images/resistors.png">
+      </section>
+      <section>
+        <h2>Resistors</h2>
+        <ul class="delayed">
+          <li class="delayed">Limits the flow of current</li>
+          <li class="delayed">Used to reduce voltage in a circuit</li>
+          <li class="delayed">Can come in many forms</li>
+        </ul>
+      </section>
+      <section><img src="images/more-resistors.jpg"></section>
+      <section><img src="images/resistor-chart.jpg"></section>
+      <section>
+        <h2>How do I use resistors?</h2><img src="images/led-circuit.gif">
+        <aside>
+          <ul>
+            <li>Explain battery, LED, resistor</li>
+            <li>How to calculate resistor needed?</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>How do I use resistors?</h2>
+        <ul class="delayed">
+          <li class="delayed">Circuit at 9v</li>
+          <li class="delayed">Examine spec sheet!</li>
+          <li class="delayed">LED needs 20mA</li>
+          <li class="delayed">r = v / i</li>
+          <li class="delayed">r = 9 / 0.02</li>
+          <li class="delayed">r = 450&#8486;</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Ohm's Law</h2>
+        <iframe src="http://www.falstad.com/circuit/circuitjs.html?cct=$+1+0.000005+10.200277308269968+50+5+50%0Ar+400+112+400+240+0+100%0A172+448+112+448+64+0+6+5+5+0+0+0.5+Voltage%0Ag+400+272+400+288+0%0Aw+400+240+400+272+1%0Ar+496+112+496+240+0+1000%0Aw+496+240+496+272+1%0Ag+496+272+496+288+0%0Aw+448+112+496+112+0%0Aw+400+112+448+112+0%0A"></iframe>
+      </section>
+      <section>
+        <h2>Resistors in series</h2>
+        <iframe src="http://www.falstad.com/circuit/circuitjs.html?cct=$+1+0.000005+10.200277308269968+50+5+50%0Av+400+384+400+64+0+0+40+5+0+0+0.5%0Ar+496+96+496+160+0+100%0Aw+400+64+496+64+2%0Aw+496+64+496+96+0%0Aw+496+384+400+384+0%0Ar+496+208+496+256+0+100%0A162+496+304+496+352+1+2.1024259+1+0+0%0Aw+496+160+496+208+2%0Aw+496+256+496+304+2%0Aw+496+352+496+384+0%0A"></iframe>
+      </section>
+      <section>
+        <h2>Resistors in series</h2>
+        <p>R<sub>total</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub> + ...</p>
+      </section>
+      <section>
+        <h2>Resistors in parallel</h2>
+        <iframe src="http://www.falstad.com/circuit/circuitjs.html?cct=$+1+0.000005+10.200277308269968+50+5+50%0Av+352+384+352+64+0+0+40+5+0+0+0.5%0Ar+448+96+448+160+0+100%0Aw+352+64+448+64+2%0Aw+448+64+448+96+0%0Aw+448+384+352+384+0%0Aw+448+160+448+208+0%0Ar+544+112+544+144+0+100%0Aw+448+64+544+64+0%0Aw+544+64+544+112+0%0Aw+544+144+544+208+0%0Aw+544+208+496+208+0%0Aw+496+208+448+208+0%0A162+496+288+496+336+1+2.1024259+1+0+0%0Aw+496+208+496+288+2%0Aw+496+336+496+384+0%0Aw+496+384+448+384+0%0A"></iframe>
+      </section>
+      <section>
+        <h2>Resistors in parallel</h2>
+        <p>1 / R<sub>total</sub> = (1 / R<sub>1</sub>) + (1 / R<sub>2</sub>) + (1 / R<sub>3</sub>) + ...</p>
+      </section>
+      <section>
+        <h2>Enough theory!</h2><img src="images/static-kitten.jpg">
+      </section>
+      <section>
+        <h2>LEDs in series</h2>
+        <iframe src="http://www.falstad.com/circuit/circuitjs.html?cct=$+1+0.000005+10.200277308269968+50+5+43%0Av+352+352+352+80+0+0+40+5+0+0+0.5%0A162+496+96+496+144+1+2.1024259+1+0+0%0A162+496+192+496+240+1+2.1024259+1+0+0%0A162+496+288+496+336+1+2.1024259+1+0+0%0Ar+400+80+448+80+0+50%0Aw+352+80+400+80+2%0Aw+448+80+496+80+2%0Aw+496+80+496+96+0%0Aw+496+144+496+192+2%0Aw+496+240+496+288+2%0Aw+496+336+496+352+0%0Aw+496+352+352+352+0%0A"></iframe>
+      </section>
+      <section>
+        <h2>LEDs in series</h2>
+        <iframe src="http://www.falstad.com/circuit/circuitjs.html?cct=$+1+0.000005+10.200277308269968+50+5+43%0Av+272+352+272+80+0+0+40+5+0+0+0.5%0Ar+352+80+416+80+0+50%0A162+464+160+464+224+1+2.1024259+1+0+0%0A162+560+160+560+224+1+2.1024259+1+0+0%0A162+656+160+656+224+1+2.1024259+1+0+0%0Aw+272+80+352+80+2%0Aw+464+160+464+128+2%0Aw+464+128+560+128+0%0Aw+560+128+560+160+2%0Aw+656+160+656+128+2%0Aw+656+128+560+128+0%0Aw+560+128+560+80+0%0Aw+560+80+416+80+2%0Aw+464+224+464+256+0%0Aw+464+256+560+256+0%0Aw+560+256+560+224+0%0Aw+560+352+272+352+0%0Aw+560+256+656+256+0%0Aw+656+256+656+224+0%0Aw+560+256+560+352+0%0A"></iframe>
+      </section>
+      <section>
+        <h2>Light detector</h2>
+        <ul class="delayed">
+          <li class="delayed">Light Dependent Resistor</li>
+          <li class="delayed">Variable resistor</li>
+          <li class="delayed">With light - low resistance (100s of &#8486;)</li>
+          <li class="delayed">In darkness - high resistance (M&#8486;s)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Light detector</h2>
+        <iframe src="http://www.falstad.com/circuit/circuitjs.html?cct=$+1+0.000005+10.200277308269968+50+5+43%0Av+544+336+544+64+0+0+40+5+0+0+0.5%0Ar+432+80+432+112+0+150%0At+400+224+432+224+0+1+0.6515443225679627+0.6691587985834793+100%0A162+432+144+432+176+1+2.1024259+1+0.5+0%0Aw+432+80+432+64+0%0Aw+432+64+544+64+0%0Aw+432+112+432+144+0%0Aw+432+176+432+208+0%0Aw+432+240+432+336+0%0Aw+432+336+544+336+0%0Aw+320+64+432+64+0%0Ar+320+112+320+160+0+400%0Aw+320+64+320+112+0%0Aw+320+160+320+224+0%0Aw+320+224+400+224+0%0A"></iframe>
+      </section>
+      <section>
+        <h2>Transistor</h2><img src="images/transistor.gif">
+      </section>
+      <section>
+        <h2>Transistor</h2>
+        <ul class="delayed">
+          <li class="delayed">Can amplify or switch circuits</li>
+          <li class="delayed">As base resistance varies, current in other circuit varies</li>
+          <li class="delayed">An Arduino can vary voltage using PWM</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Enough theory again!</h2><img src="images/static-cat.jpg">
+      </section>
+      <section>
+        <h2>Darkness detector</h2>
+        <iframe src="http://www.falstad.com/circuit/circuitjs.html?cct=$+1+0.000005+10.200277308269968+50+5+43%0Av+544+352+544+80+0+0+40+6+0+0+0.5%0Ar+432+96+432+128+0+330%0At+400+240+432+240+0+1+-5.017679931420304+0.23076923038252514+100%0A162+432+160+432+192+1+2.1024259+1+0.5+0%0Aw+432+96+432+80+0%0Aw+432+80+544+80+0%0Aw+432+128+432+160+0%0Aw+432+192+432+224+0%0Aw+432+256+432+352+0%0Aw+432+352+544+352+0%0Aw+320+80+432+80+0%0Ar+320+288+320+336+0+40%0Aw+320+240+320+288+0%0Aw+320+336+320+352+0%0Aw+320+352+432+352+0%0Aw+384+240+400+240+0%0Ar+320+128+320+176+0+1000%0Aw+320+80+320+128+2%0Aw+320+176+320+240+2%0Aw+320+240+384+240+0%0A"></iframe>
+      </section>
+      <section>
+        <h2>Recap</h2>
+        <ul class="delayed">
+          <li class="delayed">Components require different voltages</li>
+          <li class="delayed">Use resistors to reduce voltage</li>
+          <li class="delayed">Ohm's law <code>v = i r</code></li>
+          <li class="delayed">Read spec sheets!</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Next time at NodeBots of London</h2>
+        <ul class="delayed">
+          <li class="delayed">Components</li>
+          <li class="delayed">Hardware debugging</li>
+          <li class="delayed">Communications protocols</li>
+        </ul>
+      </section>
+      <section><img src="images/logo.svg"></section>
     </article>
     <script src="main.js"></script>
   </body>
