@@ -7,7 +7,7 @@
     "url": "https://github.com/achingbrain/electricity-a-primer.git"
   },
   "dependencies": {
-    "@achingbrain/slides": "^0.0.4"
+    "@achingbrain/slides": "^0.0.6"
   },
   "scripts": {
     "start": "slides present",
